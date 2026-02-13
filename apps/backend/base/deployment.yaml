@@ -22,6 +22,11 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: "dev"
+          envFrom:
+            - configMapRef:
+                name: backend-config
+            - secretRef:
+                name: backend-secret
           readinessProbe:
             httpGet:
               path: /actuator/health/readiness

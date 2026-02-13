@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+data:
+  SPRING_PROFILES_ACTIVE: "dev"
+  SPRING_DATASOURCE_URL: "jdbc:mysql://c7mq2i6swl7q:3306/ticketing-prod-mysql?useSSL=false&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true"
