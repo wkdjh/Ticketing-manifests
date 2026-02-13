@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<YOUR_ORG>/manifests-repo.git
+    repoURL: https://github.com/wkdjh/Ticketing-manifests.git
     targetRevision: main
     path: apps/backend/overlays/dev
   destination:
