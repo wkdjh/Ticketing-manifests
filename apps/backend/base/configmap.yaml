@@ -4,4 +4,4 @@ metadata:
   name: backend-config
 data:
   SPRING_PROFILES_ACTIVE: "dev"
-  SPRING_DATASOURCE_URL: "jdbc:mysql://ticketing-prod-mysql.c7mq2i6swl7q.ap-northeast-2.rds.amazonaws.com:3306/ticketing-prod-mysql?useSSL=false&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true"
+  SPRING_DATASOURCE_URL: "jdbc:mysql://ticketing-prod-mysql.c7mq2i6swl7q.ap-northeast-2.rds.amazonaws.com:3306/ticketing?useSSL=false&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true"
