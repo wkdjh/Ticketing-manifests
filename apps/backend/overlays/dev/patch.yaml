@@ -8,7 +8,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 062025573047.dkr.ecr.ap-northeast-2.amazonaws.com/ticketing-prod-backend:3721b2a
+          image: 062025573047.dkr.ecr.ap-northeast-2.amazonaws.com/ticketing-prod-backend:1e9fc74
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: "dev"
