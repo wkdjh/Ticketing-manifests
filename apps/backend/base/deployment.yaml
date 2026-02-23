@@ -27,6 +27,17 @@ spec:
                 name: backend-config
             - secretRef:
                 name: backend-secret
+
+          # ⭐ 추가 (여기!)
+          startupProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 60
+
           readinessProbe:
             httpGet:
               path: /actuator/health/readiness
@@ -35,6 +46,7 @@ spec:
             periodSeconds: 10
             timeoutSeconds: 2
             failureThreshold: 6
+
           livenessProbe:
             httpGet:
               path: /actuator/health/liveness
@@ -43,6 +55,7 @@ spec:
             periodSeconds: 10
             timeoutSeconds: 2
             failureThreshold: 3
+
           resources:
             requests:
               cpu: "100m"
